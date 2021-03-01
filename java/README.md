@@ -1,7 +1,7 @@
 # This is the MySQL Test Client with Java Connector
 
 1. To compile
-... Setup classpath correctly
+   Setup classpath correctly
 
 ```shell
 THISCLASSPATH=.
@@ -12,7 +12,7 @@ done
 export CLASSPATH=$THISCLASSPATH
 ```
 
-... Comiling the JavaClient.java
+   Comiling the JavaClient.java
 ```shell
 javac -classpath $THISCLASSPATH JavaClient.java
 ```
@@ -21,7 +21,7 @@ javac -classpath $THISCLASSPATH JavaClient.java
 ```shell
 java -classpath $THISCLASSPATH JavaClient -h<mds host>:<port -u<user> -p<password> -t<thread> -l<loop>
 ```
-...help
+   help
 ```
 $ java JavaClient.java
 Missing required options: h, u, p
