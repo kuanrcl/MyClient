@@ -111,8 +111,10 @@ def create_database(cursor):
 		exit()
 
 try:
+	print(cnx.database)
 	cnx.database = DB_NAME
-except mysql.connector.Error as err:
+	print("switched to " + DB_NAME)
+except :
 	create_database(cursor)
 cnx.database = DB_NAME
 
